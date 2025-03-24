@@ -19,7 +19,7 @@ jobs:
           outputs: dist/github-snake.svg
 
       - name: Listar arquivos gerados
-        run: ls -l dist/
+        run: ls -la dist/
 
       - name: Commit e push da animação
         run: |
