@@ -17,10 +17,6 @@ jobs:
         with:
           github_user_name: diogonascimentonovo
           svg_out_path: dist/github-contribution-grid-snake.svg
-      - uses: actions/upload-artifact@v3
-        with:
-          name: snake
-          path: dist/github-contribution-grid-snake.svg
       - name: Commit and push
         run: |
           git config --global user.name "github-actions[bot]"
