@@ -2,7 +2,7 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # Executa uma vez por dia à meia-noite (UTC)
+    - cron: "0 0 * * *"  # Executa diariamente à meia-noite (UTC)
   workflow_dispatch:  # Permite execução manual
 
 jobs:
@@ -16,13 +16,16 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          outputs: dist/snake.svg
+          outputs: dist/github-snake.svg
+
+      - name: Verificar arquivos gerados
+        run: ls -R dist/ || echo "Nenhum arquivo gerado"
 
       - name: Commit e push da animação
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/snake.svg
+          git add dist/github-snake.svg
           git commit -m "Atualizando a cobrinha"
           git push
         continue-on-error: true
