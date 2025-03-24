@@ -56,4 +56,4 @@ Pesquisa sobre blockchain, RPA e auditoria contínua.
 
 ---
 
-![Snake animation](https://raw.githubusercontent.com/diogonascimentonovo/diogonascimentonovo/output/github-contribution-grid-snake.svg)
+![Snake animation](https://raw.githubusercontent.com/diogonascimentonovo/diogonascimentonovo/dist/github-contribution-grid-snake.svg)
