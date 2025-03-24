@@ -18,14 +18,19 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: dist/github-snake.svg
 
-      - name: Verificar arquivos gerados
-        run: ls -R dist/ || echo "Nenhum arquivo gerado"
+      - name: Listar arquivos gerados
+        run: ls -l dist/
 
       - name: Commit e push da animação
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dist/github-snake.svg
-          git commit -m "Atualizando a cobrinha"
-          git push
-        continue-on-error: true
+          # Verifica se o arquivo existe e realiza o commit somente se houver mudança
+          if [ -f dist/github-snake.svg ]; then
+            git add dist/github-snake.svg
+            git commit -m "Atualizando a cobrinha" || echo "Nenhuma alteração detectada"
+            git push
+          else
+            echo "Arquivo não encontrado, abortando commit."
+            exit 1
+          fi
