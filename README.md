@@ -7,7 +7,6 @@
 ---
 
 ## 🧩 Sobre mim  
-- 📊 Fundador da **Araxys Business & Tax Intelligence**, empresa que une **inteligência comercial e gestão tributária**.  
 - 🤖 Desenvolvi um **bot com pagamentos automatizados** e gerenciamento de assinaturas.  
 - 💡 Interesse em **inovação e tecnologia para análises**, explorando **blockchain, RPA e análise preditiva**.    
 - 🏗️ Trabalhando em um **PWA de planejamento financeiro** leve e rápido.  
@@ -36,9 +35,6 @@ Automatiza pagamentos e gerencia usuários ativos.
 Aplicação leve e otimizada para controle financeiro.  
 ![PWA](https://img.shields.io/badge/Status-Em%20desenvolvimento-blue)
 
-### 🔍 **Inovações para auditoria e consultoria**  
-Pesquisa sobre blockchain, RPA e auditoria contínua.  
-![Auditoria](https://img.shields.io/badge/Status-Em%20andamento-yellow)
 
 ---
 
@@ -55,6 +51,3 @@ Pesquisa sobre blockchain, RPA e auditoria contínua.
 🌐 **GitHub:** [diogonascimentonovo](https://github.com/diogonascimentonovo)  
 
 ---
-### 🐍 Snake Animation  
-
-![Snake animation](https://github.com/diogonascimentonovo/diogonascimentonovo/blob/output/github-contribution-grid-snake.svg)
